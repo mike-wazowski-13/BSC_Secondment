@@ -13,7 +13,7 @@ import numpy as nmp
 
 B = 14 # Shortwave spectral bands
 Hz = 7 # Scanza host minerals
-Im = 21 # Grid iron-oxide mass-fractions
+Im = 21 # Grid n of bins: iron-oxide mass-fractions
 Ir = 144 # Reference longitudes
 Jr = 96 # Reference latitudes
 K = 65 # Grid imaginary indices
@@ -25,7 +25,7 @@ N = 45 # Grid real indices
 S = 8 # Dust size bins (Monarch)
 Sd = 9 # Dust size bins (Dustcomm)
 T = 12 # Climatological months
-X = 1000 # Grid size parameters (x=2pi*r/wvl, unitless) for Mie calculations
+X = 1000 # Grid n of bins: size parameters (x=2pi*r/wvl, unitless) for Mie calculations
 
 tmon = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
 
@@ -49,7 +49,7 @@ kgrd = nmp.hstack([0.0, nmp.arange(1.0, 10.0)*1e-05,
 ngrd[0] = 1e-02
 kgrd[0] = 1e-10
 
-xgrd = nmp.exp(nmp.linspace(nmp.log(0.01), nmp.log(2000.0), X)) #particle radii grid (in log scale)
+xgrd = nmp.exp(nmp.linspace(nmp.log(0.01), nmp.log(2000.0), X)) #size parameter (Mie) grid (in log scale)
 
 ### SIZE DISTRIBUTIONS ###
 
