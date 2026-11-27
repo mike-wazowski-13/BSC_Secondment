@@ -94,7 +94,7 @@ bwvl = nmp.array([0.370, 0.470, 0.520, 0.590, 0.660, 0.880, 0.950]) # (um)
 xtob = [17, 27, 32, 39, 46, 68, 75] #from xwvl which indexes are considered in bwvl
 
 # --- GRASP UV SSA wavelengths
-wvl_micron = [0.32, 0.33, 0.34, 0.35, 0.36, 0.44, 0.675, 0.87] #
+wvl_micron = [0.32, 0.33, 0.34, 0.35, 0.36, 0.370, 0.380, 0.44, 0.520, 0.675, 0.87] #
 B_mono = len(wvl_micron)
 
 ### REFRACTIVE INDICES ###
